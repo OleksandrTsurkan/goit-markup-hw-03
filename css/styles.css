@@ -1,8 +1,10 @@
+/*
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+*/
 
 :root {
 }
@@ -16,6 +18,12 @@ h6,
 p,
 ul {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -206,8 +214,6 @@ body {
 .features-main {
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
 .features-header-item,
@@ -364,13 +370,10 @@ body {
 .portfolio-services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 48px 24px;
 }
 
 .portfolio-services-items {
-  margin-bottom: 48px;
-  border-bottom: 1px solid #e7e9fc;
-  padding-bottom: 32px;
 }
 
 .portfolio-services-items:nth-last-child(-n + 3) {
@@ -408,6 +411,7 @@ body {
 }
 
 .portfolio-services-text {
-  padding-left: 16px;
-  margin-top: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
 }
